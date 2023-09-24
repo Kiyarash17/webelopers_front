@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  position: static;
+  font-family: "Vazirmatn", sans-serif;
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+  @apply text-slate-800;
+}
