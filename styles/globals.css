@@ -8,7 +8,7 @@ body {
   padding: 0;
   position: static;
   font-family: "Vazirmatn", sans-serif;
-  background-color: #f9f9f9;
+  background-color: #e7edf8;
   overflow-x: hidden;
-  @apply text-slate-800;
+  color: #0b1528;
 }
