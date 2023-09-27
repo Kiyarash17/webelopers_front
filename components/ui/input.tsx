@@ -9,6 +9,7 @@ type Props = {
   defaultValue?: string;
   value?: string | number;
   disable?: boolean;
+  fullWidth?: boolean;
 };
 
 export default function Input(props: Props) {
@@ -27,9 +28,9 @@ export default function Input(props: Props) {
         placeholder={props.placeholder}
         className={`${
           props.inputClassName
-        } py-1.5 bg-sGray border border-gray-300 text-gray-500 focus:outline-none rounded-lg px-2 ${
+        } py-1.5 bg-sGray border border-gray-300 text-gray-500 focus:outline-none rounded-lg px-2 focus:border-primary ${
           props.disable ? " cursor-not-allowed" : "cursor-pointer"
-        }`}
+        } ${props.fullWidth && "w-full"}`}
         id={props.id}
         onChange={props.onChange}
         defaultValue={props.defaultValue}

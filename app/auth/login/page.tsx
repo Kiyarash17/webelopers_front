@@ -1,41 +1,21 @@
+import Input from "@/components/ui/input";
+
 export default function Page() {
   return (
     <div className="bg-gray-100 flex justify-center items-center h-screen max-h-screen overflow-hidden">
-      <div className="w-1/2 h-screen hidden md:block">
+      <div className="flex-1 h-screen hidden md:block">
         <img
           src="https://placehold.co/800x/667fff/ffffff.png?text=Your+Image&font=Montserrat"
           alt="Placeholder Image"
           className="object-cover w-full h-full"
         />
       </div>
-      <div className="lg:p-36 md:p-52 sm:20 p-8 w-full lg:w-1/2">
+      <div className="p-8 flex-1">
         <h1 className="text-2xl font-semibold mb-4">Login</h1>
         <form action="#" method="POST">
-          
-          <div className="mb-4">
-            <label htmlFor="username" className="block text-gray-600">
-              Username
-            </label>
-            <input
-              type="text"
-              id="username"
-              name="username"
-              className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
-              autoComplete="off"
-            />
-          </div>
-          <div className="mb-4">
-            <label htmlFor="password" className="block text-gray-600">
-              Password
-            </label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
-              autoComplete="off"
-            />
-          </div>
+          <Input id="username" label="username" />
+          <Input id="password" label="password" />
+
           <div className="mb-4 flex items-center">
             <input
               type="checkbox"
