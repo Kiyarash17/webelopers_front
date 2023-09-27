@@ -5,8 +5,8 @@ export default function Page() {
     <div className="bg-gray-100 flex justify-center items-center h-screen max-h-screen overflow-hidden">
       <div className="flex-1 h-screen hidden md:block">
         <img
-          src="https://placehold.co/800x/667fff/ffffff.png?text=Your+Image&font=Montserrat"
-          alt="Placeholder Image"
+          src="/img/login.jpg"
+          alt="Login image"
           className="object-cover w-full h-full"
         />
       </div>
