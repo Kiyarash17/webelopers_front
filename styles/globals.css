@@ -8,7 +8,7 @@ body {
   padding: 0;
   position: static;
   font-family: "Vazirmatn", sans-serif;
-  background-color: #e7edf8;
+  background-color: #fafafa;
   overflow-x: hidden;
   color: #0b1528;
 }
@@ -27,4 +27,87 @@ body {
 
 .ltr-direction {
   direction: ltr;
+}
+
+/* Headings */
+h1 {
+  @apply text-5xl;
+}
+
+h2 {
+  @apply text-4xl;
+}
+
+h3 {
+  @apply text-3xl;
+}
+
+h4 {
+  @apply text-2xl;
+}
+
+h5 {
+  @apply text-xl font-medium;
+}
+
+h6 {
+  @apply text-lg;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-medium;
+}
+
+.btn {
+  @apply rounded-3xl px-5 py-2 transition-all relative cursor-pointer flex items-center justify-center gap-3 text-sm;
+}
+
+.fullWidth {
+  @apply w-full;
+}
+
+.btn.primary {
+  @apply bg-primary cursor-pointer hover:bg-primary/90 text-white;
+}
+
+.btn.outlined.primary {
+  @apply bg-transparent border border-primary text-primary hover:bg-primary hover:text-white cursor-pointer;
+}
+
+
+.btn.secondary {
+  @apply text-white hover:bg-secondary/90 bg-secondary cursor-pointer;
+}
+
+.btn.secondary {
+  @apply text-white hover:bg-secondary/90 bg-secondary cursor-pointer;
+}
+
+.btn.outlined.secondary {
+  @apply bg-transparent border border-secondary text-secondary hover:bg-secondary hover:text-white cursor-pointer;
+}
+
+.btn.gray {
+  @apply hover:bg-gray-200/90 bg-gray-200 cursor-pointer text-primary;
+}
+
+.btn.sm {
+  @apply p-2;
+}
+
+.btn.md {
+  @apply p-4;
+}
+
+.btn.lg {
+  @apply p-6;
+}
+
+.btn:disabled {
+  @apply bg-gray-300 text-white cursor-not-allowed
 }

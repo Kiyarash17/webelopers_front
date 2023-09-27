@@ -1,6 +1,7 @@
 import "@/styles/inter.css";
 import "@/styles/vazirmatn.css";
 import "@/styles/globals.css";
+import Navbar from "@/components/layouts/header/navbar";
 
 export const metadata = {
   title: "Create Next App",
@@ -14,7 +15,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <header>
+          <Navbar />
+        </header>
+
+        {children}
+      </body>
     </html>
   );
 }

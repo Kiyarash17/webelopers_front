@@ -1,7 +1,10 @@
 const FA = {
   project: {
-    title: "OKM",
+    title: "Blueberry",
   },
+  login: {
+    login: "ورود"
+  }
 };
 
 export default FA;
