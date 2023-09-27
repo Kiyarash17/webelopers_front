@@ -11,35 +11,23 @@ export default function Page() {
         />
       </div>
       <div className="p-8 flex-1">
-        <h1 className="text-2xl font-semibold mb-4">Login</h1>
-        <form action="#" method="POST">
-          <Input id="username" label="username" />
-          <Input id="password" label="password" />
+        <h1 className="text-2xl font-semibold mb-4 text-center">Login</h1>
+        <form
+          action="#"
+          method="POST"
+          className="flex flex-col justify-center items-center gap-5 container-sm"
+        >
+          <Input id="username" label="username" fullWidth />
+          <Input id="password" label="password" fullWidth />
 
-          <div className="mb-4 flex items-center">
-            <input
-              type="checkbox"
-              id="remember"
-              name="remember"
-              className="text-blue-500"
-            />
-            <label htmlFor="remember" className="text-gray-600 ml-2">
-              Remember Me
-            </label>
-          </div>
-          <div className="mb-6 text-blue-500">
-            <a href="#" className="hover:underline">
-              Forgot Password?
-            </a>
-          </div>
           <button
             type="submit"
-            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-md py-2 px-4 w-full"
+            className="bg-primary hover:bg-primary/90 text-white font-semibold rounded-md py-2 px-4 w-full"
           >
             Login
           </button>
         </form>
-        <div className="mt-6 text-blue-500 text-center">
+        <div className="mt-5 text-primary text-center">
           <a href="#" className="hover:underline">
             Sign up Here
           </a>

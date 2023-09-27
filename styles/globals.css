@@ -12,3 +12,19 @@ body {
   overflow-x: hidden;
   color: #0b1528;
 }
+
+.container {
+  @apply w-[96%] sm:w-11/12 mx-auto;
+}
+
+.container-md {
+  @apply w-[96%] sm:w-10/12 mx-auto;
+}
+
+.container-sm {
+  @apply w-[96%] sm:w-9/12 mx-auto;
+}
+
+.ltr-direction {
+  direction: ltr;
+}
