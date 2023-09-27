@@ -14,7 +14,9 @@ export default function Navbar() {
         </h6>
         <ul className="flex items-center gap-5">
           {NAVBARITEMS.map((val, index) => (
-            <li key={index}>{val.title}</li>
+            <li key={index} className="hover:border-b-2 border-secondary">
+              <a href={val.href}>{val.title}</a>
+            </li>
           ))}
         </ul>
         <Button color="gray">
