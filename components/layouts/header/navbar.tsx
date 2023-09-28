@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="hidden md:block py-3 shadow">
+      <nav className="hidden md:block py-3 shadow mb-3">
         <div className="flex justify-between items-center container">
           <h6 className="text-primary">
             <a href="/">{locale?.project?.title}</a>

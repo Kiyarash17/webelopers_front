@@ -12,7 +12,7 @@ export default function MobileNavbar() {
   const locale = useLocale("fa");
 
   return (
-    <nav className="relative py-2 md:hidden">
+    <nav className="relative py-2 md:hidden shadow mb-3">
       <div className="container flex items-center justify-between">
         <Button className="!p-0" onClick={() => setOpenMenu(!openMenu)}>
           <TbMenu2 className="text-2xl" />

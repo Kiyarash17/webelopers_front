@@ -8,7 +8,6 @@ export default function Page({ params: { lang } }: any) {
     <>
       <p>{locale?.project?.title}</p>
 
-      <h6>hii</h6>
     </>
   );
 }

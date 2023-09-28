@@ -19,11 +19,11 @@ export default function Header() {
           {locale?.header?.title}
         </h2>
         <p className="text-gray-400">{locale?.header?.description}</p>
-        <Button color="primary" className="w-fit px-8">
+        <Button color="primary" className="w-fit px-8" href="/questions">
           {locale?.header?.button}
           <HiMagnifyingGlass />
         </Button>
-      </div>   
+      </div>
     </div>
   );
 }
