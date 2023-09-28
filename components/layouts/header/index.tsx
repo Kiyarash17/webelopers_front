@@ -6,7 +6,7 @@ export default function Header() {
   const locale = useLocale("fa");
 
   return (
-    <div className="flex flex-col-reverse md:flex-row max-h-[89vh]">
+    <div className="flex flex-col-reverse md:flex-row md:max-h-[89vh]">
       <div className="flex-1">
         <img
           src="/img/header.jpg"
