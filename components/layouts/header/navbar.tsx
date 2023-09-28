@@ -1,6 +1,7 @@
 import Button from "@/components/ui/button";
 import { NAVBARITEMS } from "@/config/navbar-items";
 import { useLocale } from "@/i18n";
+import Link from "next/link";
 import { FiLogIn } from "react-icons/fi";
 
 export default function Navbar() {
@@ -15,7 +16,9 @@ export default function Navbar() {
         <ul className="flex items-center gap-5">
           {NAVBARITEMS.map((val, index) => (
             <li key={index} className="hover:border-b-2 border-secondary">
-              <a href={val.href}>{val.title}</a>
+              <Link href={val.href} lang="fa">
+                {val.title}
+              </Link>
             </li>
           ))}
         </ul>
