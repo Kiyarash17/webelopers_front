@@ -12,7 +12,7 @@ const filterItems = [
 
 export default function Page() {
   return (
-    <div className="space-y-5">
+    <div className="space-y-5 container">
       <QuestionsHeader />
 
       <div className="space-y-3">
