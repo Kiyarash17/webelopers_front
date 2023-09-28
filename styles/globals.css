@@ -146,3 +146,20 @@ a.page-link svg {
 li .disabled {
   @apply hidden;
 }
+
+/* Paper */
+.paper {
+  @apply rounded-xl bg-white;
+}
+
+.paper.sm {
+  @apply p-2;
+}
+
+.paper.md {
+  @apply p-4;
+}
+
+.paper.lg {
+  @apply p-6;
+}

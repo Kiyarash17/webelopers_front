@@ -5,11 +5,10 @@ const i18n = {
   en: EN,
   fa: FA,
 };
-
-export type SupportedLocale = "en" | "fa";
-
-function useLocale(lang: SupportedLocale) {
+const SupportedLocales = ["en", "fa"];
+export type SupportedLocaleType = "en" | "fa";
+function useLocale(lang: SupportedLocaleType) {
   return i18n[lang];
 }
 
-export { useLocale };
+export { useLocale, SupportedLocales };
