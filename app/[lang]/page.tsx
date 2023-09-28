@@ -1,12 +1,12 @@
 import { useLocale } from "@/i18n";
 
 export default function Page({ params: { lang } }: any) {
-  console.log("hi");
   const locale = useLocale(lang);
+  console.log(locale);
 
   return (
     <>
-      <p>{locale.project.title}</p>
+      <p>{locale?.project?.title}</p>
 
       <h6>hii</h6>
     </>
