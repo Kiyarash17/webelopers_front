@@ -1,8 +1,10 @@
 import QuestionCard from "@/components/questions/cards";
 import QuestionsHeader from "@/components/questions/header";
 import Button from "@/components/ui/button";
+import Pagination from "@/components/ui/pagination";
 import Paper from "@/components/ui/paper";
 import { MdOutlineCalendarMonth } from "react-icons/md";
+import PageClient from "./page-client";
 
 const filterItems = [
   {
@@ -20,6 +22,8 @@ export default function Page() {
         <QuestionCard />
         <QuestionCard />
       </div>
+
+      <PageClient />
     </div>
   );
 }
