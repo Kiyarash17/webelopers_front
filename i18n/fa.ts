@@ -5,6 +5,7 @@ const FA = {
   login: {
     login: "ورود",
   },
+  search: "جستجو",
   header: {
     title: "سوالی داری؟ جوابش پیش ماست😎!",
     description:

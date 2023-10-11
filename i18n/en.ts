@@ -5,9 +5,9 @@ const EN = {
   login: {
     login: "Login",
   },
+  search: "Search",
   header: {
-    title:
-      "Ask any question you have a problem to find the answer as soon as possible!!!!",
+    title: "Have Question? The Answer is here😎!",
     description:
       "Blueberry is the largest question and answer system with more than 1000 active users in the country.",
     button: "View Question",
