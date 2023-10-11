@@ -25,7 +25,7 @@ export default function Header(props: Props) {
         </h2>
         <p className="text-gray-400">{locale?.header?.description}</p>
         <Button color="primary" className="w-fit px-8" href={`${props.lang}/questions`}>
-          {locale?.header?.button}
+          {locale?.login?.login}
           <HiMagnifyingGlass />
         </Button>
       </div>
