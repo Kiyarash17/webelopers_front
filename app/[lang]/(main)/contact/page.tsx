@@ -13,11 +13,16 @@ export default function Page() {
         <h1 className="text-center text-xl text-white md:text-4xl">
           ارتباط با ما
         </h1>
+        <div className="mx-auto h-0.5 w-2/12 bg-secondary md:w-1/12"></div>
       </div>
       <Paper className="container" size="lg">
         <div className="flex w-full flex-col gap-8 md:flex-row md:gap-0">
           <div className="flex-1 space-y-8 container-sm">
-            <img src="/img/contact.jpg" alt="people's image" className="mix-blend-multiply w-2/3 mx-auto" />
+            <img
+              src="/img/contact.jpg"
+              alt="people's image"
+              className="mix-blend-multiply w-2/3 mx-auto"
+            />
           </div>
           <ul className="flex-1 flex flex-col justify-center items-start gap-5 container-md">
             {SOCIALMEDIA.map((val: any, index: number) => (

@@ -9,7 +9,7 @@ type Props = {
 
 export default function Paper(props: Props) {
   const size = props.size || "md";
-  const shadow = props.shadow || "shadow-sm";
+  const shadow = props.shadow || "shadow-md";
   return (
     <div className={`paper ${size} ${props.className} ${shadow}`}>
       {props.children}

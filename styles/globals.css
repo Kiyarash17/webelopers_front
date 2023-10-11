@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 body {
-  direction: rtl;
   margin: 0;
   padding: 0;
   position: static;
@@ -25,8 +24,12 @@ body {
   @apply w-[96%] sm:w-9/12 mx-auto;
 }
 
-.ltr-direction {
-  direction: ltr;
+.dir-ltr {
+  direction: ltr !important;
+}
+
+.dir-rtl {
+  direction: rtl !important;
 }
 
 /* Headings */
@@ -63,6 +66,8 @@ h6 {
   @apply font-medium;
 }
 
+/* Buttons component's styles */
+
 .btn {
   @apply rounded-3xl px-5 py-2 transition-all relative cursor-pointer flex items-center justify-center gap-3 text-sm;
 }
@@ -78,7 +83,6 @@ h6 {
 .btn.outlined.primary {
   @apply bg-transparent border border-primary text-primary hover:bg-primary hover:text-white cursor-pointer;
 }
-
 
 .btn.secondary {
   @apply text-white hover:bg-secondary/90 bg-secondary cursor-pointer;
@@ -109,5 +113,56 @@ h6 {
 }
 
 .btn:disabled {
-  @apply bg-gray-300 text-white cursor-not-allowed
+  @apply bg-gray-300 text-white cursor-not-allowed;
+}
+
+/* Pagination's Style */
+.page-item {
+  @apply rounded-lg border border-gray-500 bg-white text-gray-500 flex justify-center items-center w-10 h-10;
+}
+
+a.page-link svg {
+  @apply w-8 h-8;
+}
+
+.pagination-arrow {
+  @apply flex justify-center items-center text-primary;
+}
+
+.active {
+  @apply bg-primary text-white;
+}
+
+.pagination-item {
+  @apply rounded-full border border-gray-300 bg-white text-gray-500 flex justify-center items-center w-10 h-10 cursor-pointer;
+}
+
+.dots:hover {
+  background-color: transparent;
+  cursor: default;
+}
+
+.selected {
+  @apply bg-primary text-white;
+}
+
+li .disabled {
+  @apply hidden;
+}
+
+/* Paper */
+.paper {
+  @apply rounded-xl bg-white;
+}
+
+.paper.sm {
+  @apply p-2;
+}
+
+.paper.md {
+  @apply p-4;
+}
+
+.paper.lg {
+  @apply p-6;
 }

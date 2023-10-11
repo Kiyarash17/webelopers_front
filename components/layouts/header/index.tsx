@@ -1,9 +1,14 @@
 import Button from "@/components/ui/button";
 import { HiMagnifyingGlass } from "react-icons/hi2";
-import { useLocale } from "@/i18n";
+import { SupportedLocaleType, useLocale } from "@/i18n";
+import Image from "next/image";
 
-export default function Header() {
-  const locale = useLocale("fa");
+type Props = {
+  lang: SupportedLocaleType;
+};
+
+export default function Header(props: Props) {
+  const locale = useLocale(props?.lang);
 
   return (
     <div className="flex flex-col-reverse md:flex-row md:max-h-[89vh]">
@@ -19,11 +24,11 @@ export default function Header() {
           {locale?.header?.title}
         </h2>
         <p className="text-gray-400">{locale?.header?.description}</p>
-        <Button color="primary" className="w-fit px-8">
-          {locale?.header?.button}
+        <Button color="primary" className="w-fit px-8" href={`${props.lang}/questions`}>
+          {locale?.login?.login}
           <HiMagnifyingGlass />
         </Button>
-      </div>   
+      </div>
     </div>
   );
 }
