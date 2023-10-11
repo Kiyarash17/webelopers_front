@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 body {
-  direction: rtl;
   margin: 0;
   padding: 0;
   position: static;
@@ -25,8 +24,12 @@ body {
   @apply w-[96%] sm:w-9/12 mx-auto;
 }
 
-.ltr-direction {
+.dir-ltr {
   direction: ltr;
+}
+
+.dir-rtl {
+  direction: rtl;
 }
 
 /* Headings */

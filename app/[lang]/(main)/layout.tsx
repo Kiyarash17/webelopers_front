@@ -1,7 +1,5 @@
-import "@/styles/inter.css";
-import "@/styles/vazirmatn.css";
-import "@/styles/globals.css";
 import Navbar from "@/components/layouts/header/navbar";
+import { SupportedLocaleType } from "@/i18n";
 
 export const metadata = {
   title: "Create Next App",
@@ -10,11 +8,13 @@ export const metadata = {
 
 export default function RootLayout({
   children,
+  params: { lang },
 }: {
   children: React.ReactNode;
+  params: { lang: SupportedLocaleType };
 }) {
   return (
-    <html lang="en">
+    <html lang={lang}>
       <body>
         <header>
           <Navbar />
