@@ -18,14 +18,13 @@ export default function Header(props: Props) {
           alt="person is thinking"
           className="object-contain w-full h-full mix-blend-multiply"
         />
-        <Image src="/img/header.jpg" width={200} height={200} alt="test" />
       </div>
       <div className="flex-1 flex flex-col justify-center gap-5 container">
         <h2 className="font-extrabold text-gray-700">
           {locale?.header?.title}
         </h2>
         <p className="text-gray-400">{locale?.header?.description}</p>
-        <Button color="primary" className="w-fit px-8" href="/questions">
+        <Button color="primary" className="w-fit px-8" href={`${props.lang}/questions`}>
           {locale?.header?.button}
           <HiMagnifyingGlass />
         </Button>

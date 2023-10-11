@@ -49,6 +49,7 @@ export default function Pagination(props: Props) {
       className={`flex justify-center gap-2 ${
         props.loading && "pointer-events-none"
       }`}
+      dir="rtl"
     >
       <li
         className={`pagination-item ${
