@@ -1,17 +1,20 @@
 import Paper from "@/components/ui/paper";
 import { SOCIALMEDIA } from "@/config/social-media";
+import { useLocale } from "@/i18n";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "تماس با ما",
 };
 
-export default function Page() {
+export default function Page(props: any) {
+  const locale = useLocale(props.params?.lang);
+
   return (
     <div className="h-full w-full space-y-7 bg-[url('/img/pages-bg.png')] bg-contain bg-no-repeat pt-9">
       <div className="space-y-2 bg-primary py-5">
         <h1 className="text-center text-xl text-white md:text-4xl">
-          ارتباط با ما
+          {locale?.contact}
         </h1>
         <div className="mx-auto h-0.5 w-2/12 bg-secondary md:w-1/12"></div>
       </div>

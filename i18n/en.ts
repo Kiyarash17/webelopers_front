@@ -15,15 +15,15 @@ const EN = {
   navbar: [
     {
       title: "Home",
-      href: "/",
+      href: "/en",
     },
     {
       title: "Contact",
-      href: "/contact",
+      href: "/en/contact",
     },
     {
       title: "About",
-      href: "/about",
+      href: "/en/about",
     },
   ],
   about: {
@@ -37,6 +37,7 @@ const EN = {
       "...",
     ],
   },
+  contact: "Contact Us"
 };
 
 export default EN;

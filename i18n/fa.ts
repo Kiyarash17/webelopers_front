@@ -15,15 +15,15 @@ const FA = {
   navbar: [
     {
       title: "خانه",
-      href: "/",
+      href: "/fa",
     },
     {
       title: "تماس با ما",
-      href: "/contact",
+      href: "/fa/contact",
     },
     {
       title: "درباره ی ما",
-      href: "/about",
+      href: "/fa/about",
     },
   ],
   about: {
@@ -37,6 +37,7 @@ const FA = {
       "...",
     ],
   },
+  contact: "ارتباط با ما",
 };
 
 export default FA;
