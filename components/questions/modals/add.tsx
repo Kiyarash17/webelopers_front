@@ -3,7 +3,7 @@
 import Button from "@/components/ui/button";
 import Modal from "@/components/ui/modal";
 import { AiOutlineCloseCircle } from "react-icons/ai";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 // import clientApi from "@/api/client";
 import { toast } from "react-toastify";
 import Input from "@/components/ui/input";
