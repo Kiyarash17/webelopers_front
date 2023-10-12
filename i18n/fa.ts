@@ -3,7 +3,10 @@ const FA = {
     title: "Blueberry",
   },
   login: {
-    login: "ورود",
+    title: "ورود",
+    username: "نام کاربری",
+    password: "رمز عبور",
+    signUp: "اینجا ثبت نام کنید",
   },
   search: "جستجو",
   header: {

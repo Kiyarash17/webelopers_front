@@ -3,7 +3,10 @@ const EN = {
     title: "Blueberry",
   },
   login: {
-    login: "Login",
+    title: "Login",
+    username: "username",
+    password: "password",
+    signUp: "Sign up Here",
   },
   search: "Search",
   header: {
@@ -37,7 +40,7 @@ const EN = {
       "...",
     ],
   },
-  contact: "Contact Us"
+  contact: "Contact Us",
 };
 
 export default EN;
