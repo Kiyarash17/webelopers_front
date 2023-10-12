@@ -7,6 +7,15 @@ const FA = {
     username: "نام کاربری",
     password: "رمز عبور",
     signUp: "اینجا ثبت نام کنید",
+    registerHref: "/fa/auth/register",
+  },
+  register: {
+    title: "ثبت نام",
+    username: "نام کاربری",
+    password: "رمز عبور",
+    repeatPassword: "تکرار رمز عبور",
+    login: "حساب دارید؟ اینجا کلیک کنید",
+    loginHref: "/fa/auth/login",
   },
   search: "جستجو",
   header: {

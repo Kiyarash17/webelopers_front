@@ -7,6 +7,15 @@ const EN = {
     username: "username",
     password: "password",
     signUp: "Sign up Here",
+    registerHref: "/en/auth/register",
+  },
+  register: {
+    title: "Register",
+    username: "username",
+    password: "password",
+    repeatPassword: "repeat password",
+    login: "Have a account? click here",
+    loginHref: "/en/auth/login",
   },
   search: "Search",
   header: {

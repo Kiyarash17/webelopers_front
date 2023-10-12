@@ -33,7 +33,7 @@ export default function Page(props: any) {
           </button>
         </form>
         <div className="mt-5 text-primary text-center">
-          <a href="#" className="hover:underline">
+          <a href={locale?.login?.registerHref} className="hover:underline">
             {locale?.login?.signUp}
           </a>
         </div>
