@@ -3,11 +3,23 @@ const EN = {
     title: "Blueberry",
   },
   login: {
-    login: "Login",
+    title: "Login",
+    username: "username",
+    password: "password",
+    signUp: "Sign up Here",
+    registerHref: "/en/auth/register",
   },
+  register: {
+    title: "Register",
+    username: "username",
+    password: "password",
+    repeatPassword: "repeat password",
+    login: "Have a account? click here",
+    loginHref: "/en/auth/login",
+  },
+  search: "Search",
   header: {
-    title:
-      "Ask any question you have a problem to find the answer as soon as possible!!!!",
+    title: "Have Question? The Answer is here😎!",
     description:
       "Blueberry is the largest question and answer system with more than 1000 active users in the country.",
     button: "View Question",
@@ -15,17 +27,36 @@ const EN = {
   navbar: [
     {
       title: "Home",
-      href: "/",
+      href: "/en",
     },
     {
       title: "Contact",
-      href: "/contact",
+      href: "/en/contact",
     },
     {
       title: "About",
-      href: "/about",
+      href: "/en/about",
     },
   ],
+  about: {
+    title: "About Us",
+    description:
+      "The Blueberry site was created by a group of programmers for educational problems to solve the Middle East, and to solve this problem they designed the Blueberry site To help people with a simple but practical design. Beside that The site has various features, for example: 1- Asking course questions or Task 2- Answering and helping others by answering their questions 3- and other general features",
+    secondTitle: "Other features of Blueberry",
+    bulletPoints: [
+      "Ability to filter questions based on different criteria",
+      "The possibility of answering a question in the form of text and photo",
+      "...",
+    ],
+  },
+  contact: "Contact Us",
+  questions: {
+    search: "search...",
+    addQuestion: "Add new question",
+  },
+  question: {
+    button: "View",
+  },
 };
 
 export default EN;

@@ -21,14 +21,12 @@ export default function Navbar(props: Props) {
           <ul className="flex items-center gap-5">
             {locale?.navbar?.map((val, index) => (
               <li key={index} className="hover:border-b-2 border-secondary">
-                <Link href={val.href} lang="fa">
-                  {val.title}
-                </Link>
+                <Link href={`${val.href}`}>{val.title}</Link>
               </li>
             ))}
           </ul>
           <Button color="gray">
-            {locale?.login?.login}
+            {locale?.login?.title}
             <FiLogIn className="text-lg" />
           </Button>
         </div>

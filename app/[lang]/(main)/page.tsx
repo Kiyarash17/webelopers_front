@@ -6,6 +6,7 @@ import { SupportedLocaleType } from "@/i18n";
 export const metadata: Metadata = {
   title: "بلوبری",
   description: "بزرگترین وبسایت پرسش و پاسخ",
+  keywords: "بلوبری، سوال",
 };
 
 type Props = {
