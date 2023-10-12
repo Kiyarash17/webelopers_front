@@ -50,6 +50,13 @@ const EN = {
     ],
   },
   contact: "Contact Us",
+  questions: {
+    search: "search...",
+    addQuestion: "Add new question",
+  },
+  question: {
+    button: "View",
+  },
 };
 
 export default EN;

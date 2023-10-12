@@ -50,6 +50,13 @@ const FA = {
     ],
   },
   contact: "ارتباط با ما",
+  questions: {
+    search: "جستجو کنید...",
+    addQuestion: "افزودن سوال جدید",
+  },
+  question: {
+    button: "مشاهده",
+  },
 };
 
 export default FA;

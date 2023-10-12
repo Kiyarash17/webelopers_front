@@ -5,6 +5,7 @@ import Pagination from "@/components/ui/pagination";
 import Paper from "@/components/ui/paper";
 import { MdOutlineCalendarMonth } from "react-icons/md";
 import PageClient from "./page-client";
+import { useLocale } from "@/i18n";
 
 const filterItems = [
   {
@@ -12,10 +13,12 @@ const filterItems = [
   },
 ];
 
-export default function Page() {
+export default function Page(props: any) {
+  const locale = useLocale(props.params?.lang);
+
   return (
     <div className="space-y-5 container">
-      <QuestionsHeader />
+      <QuestionsHeader locale={locale} lang={props.params?.lang} />
 
       <div className="space-y-3">
         <QuestionCard />
