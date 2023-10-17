@@ -1,5 +1,10 @@
 import Input from "@/components/ui/input";
 import { useLocale } from "@/i18n";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Register",
+};
 
 export default function Page(props: any) {
   const locale = useLocale(props.params?.lang);
