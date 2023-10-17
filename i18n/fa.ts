@@ -13,9 +13,12 @@ const FA = {
     title: "ثبت نام",
     username: "نام کاربری",
     password: "رمز عبور",
-    repeatPassword: "تکرار رمز عبور",
+    email: "ایمیل",
+    first_name: "نام", 
+    last_name: "نام خانوادگی",
     login: "حساب دارید؟ اینجا کلیک کنید",
     loginHref: "/fa/auth/login",
+    message: "حساب کاربری با موفقیت ساخته شد"
   },
   search: "جستجو",
   header: {

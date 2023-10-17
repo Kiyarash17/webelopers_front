@@ -4,8 +4,8 @@ import Button from "@/components/ui/button";
 import Modal from "@/components/ui/modal";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { useState } from "react";
-// import clientApi from "@/api/client";
 import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import Input from "@/components/ui/input";
 import clientApi from "@/api/client";
 

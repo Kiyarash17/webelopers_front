@@ -3,6 +3,8 @@
 import clientApi from "@/api/client";
 import Input from "@/components/ui/input";
 import { useState } from "react";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 type Props = {
   locale: any;
@@ -16,9 +18,17 @@ export default function PageClient(props: Props) {
 
   const onSubmitClicked = (e: any) => {
     e.preventdefault();
-    clientApi.auth.authLoginCreate(query, {}).then((resp) => {
-      console.log(resp);
-    });
+    clientApi.auth
+      .authLoginCreate(query, {})
+      .then((resp) => {
+        console.log(resp);
+      })
+      .catch((err) => {
+        toast.error("لطفا اتصال خود را به اینترنت برسی کنید", {
+          position: "bottom-right",
+          rtl: true,
+        });
+      });
   };
 
   return (

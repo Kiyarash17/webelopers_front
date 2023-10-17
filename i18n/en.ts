@@ -13,9 +13,12 @@ const EN = {
     title: "Register",
     username: "username",
     password: "password",
-    repeatPassword: "repeat password",
+    email: "email",
+    first_name: "first name", 
+    last_name: "last name",
     login: "Have a account? click here",
     loginHref: "/en/auth/login",
+    message: "Account successfuly created!"
   },
   search: "Search",
   header: {
