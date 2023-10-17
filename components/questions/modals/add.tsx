@@ -7,6 +7,7 @@ import { useState } from "react";
 // import clientApi from "@/api/client";
 import { toast } from "react-toastify";
 import Input from "@/components/ui/input";
+import clientApi from "@/api/client";
 
 type Props = {
   open: boolean;
@@ -19,13 +20,29 @@ export default function AddQuestionModal(props: Props) {
   const [query, setQuery] = useState<any>({
     title: undefined as unknown as string,
     deadline: undefined as unknown as string,
-    type: undefined as unknown as string,
     description: undefined as unknown as string,
+    questions_fields: undefined as unknown as string,
+    tags: undefined as unknown as string,
   });
 
   const onSubmitClicked = (e: any) => {
     e.preventDefault();
     setLoading(true);
+
+    clientApi.questions
+      .questionsCreate(query)
+      .then((resp) => {
+        toast.success("سوال شما با موفقیت ایجاد شد", {
+          position: "bottom-right",
+          rtl: true,
+        });
+      })
+      .catch((err) => {
+        toast.error("لطفا اتصال خود را به اینترنت برسی کنید", {
+          position: "bottom-right",
+          rtl: true,
+        });
+      });
 
     // باید سواگر را اضافه کنیم و بعد دیتای query را به آن ارسال کنیم تا سوال ثبت شود
 
@@ -64,18 +81,25 @@ export default function AddQuestionModal(props: Props) {
             onChange={(e: any) => setQuery({ ...query, title: e.target.value })}
           />
           <Input
-            id="title"
+            id="deadline"
+            type="date"
             label="ددلاین پاسخگویی"
-            value={query.deadline}
+            value={query.deadline?.toLocaleString()}
             onChange={(e: any) =>
               setQuery({ ...query, deadline: e.target.value })
             }
           />
           <Input
-            id="title"
+            id="tags"
             label="تگ مسئله"
-            value={query.type}
-            onChange={(e: any) => setQuery({ ...query, type: e.target.value })}
+            value={query.tags}
+            onChange={(e: any) => setQuery({ ...query, tags: e.target.value })}
+          />
+          <Input
+            id="questions_fields"
+            label="فیلد سوال(آموزشی و ...)"
+            value={query.questions_fields}
+            onChange={(e: any) => setQuery({ ...query, questions_fields: e.target.value })}
           />
 
           <div className="space-y-2 col-span-1 sm:col-span-2 md:col-span-3">

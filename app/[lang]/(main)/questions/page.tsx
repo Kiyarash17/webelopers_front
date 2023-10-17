@@ -6,15 +6,18 @@ import Paper from "@/components/ui/paper";
 import { MdOutlineCalendarMonth } from "react-icons/md";
 import PageClient from "./page-client";
 import { useLocale } from "@/i18n";
+import serverApi from "@/api/server";
 
-const filterItems = [
-  {
-    title: "",
-  },
-];
+async function getQuestions() {
+  return (await serverApi.questions.questionsList()).data
+}
 
-export default function Page(props: any) {
+export default async function Page(props: any) {
   const locale = useLocale(props.params?.lang);
+
+  // const questions = await getQuestions();
+
+  // console.log(questions.results);
 
   return (
     <div className="space-y-5 container">
