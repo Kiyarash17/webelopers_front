@@ -8,6 +8,7 @@ const EN = {
     password: "password",
     signUp: "Sign up Here",
     registerHref: "/en/auth/register",
+    loginBtn: "/en/auth/login",
   },
   register: {
     title: "Register",
