@@ -61,6 +61,10 @@ const FA = {
   question: {
     button: "مشاهده",
   },
+  error: {
+    default: "لطفا اتصال خود را به اینترنت برسی کنید",
+    empty: "لطفا تمامی فیلد ها را پر کنید",
+  },
 };
 
 export default FA;

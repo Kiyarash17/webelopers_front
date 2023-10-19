@@ -3,7 +3,7 @@
 import clientApi from "@/api/client";
 import Input from "@/components/ui/input";
 import { useState } from "react";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 type Props = {
@@ -20,7 +20,7 @@ export default function PageClient(props: Props) {
   });
 
   const onSubmitClicked = (e: any) => {
-    e.preventdefault();
+    e.preventDefault();
     clientApi.auth
       .authRegisterCreate(query, {})
       .then((resp) => {
@@ -31,7 +31,14 @@ export default function PageClient(props: Props) {
         });
       })
       .catch((err) => {
-        toast.error("لطفا اتصال خود را به اینترنت برسی کنید", {
+        if (!query.username || !query.password) {
+          toast.error(props.locale?.error?.empty, {
+            position: "bottom-right",
+            rtl: true,
+          });
+          return;
+        }
+        toast.error(props.locale?.error?.default, {
           position: "bottom-right",
           rtl: true,
         });
@@ -43,7 +50,10 @@ export default function PageClient(props: Props) {
       <h1 className="text-2xl font-semibold mb-4 text-center">
         {props?.locale?.register?.title}
       </h1>
-      <form className="flex flex-col justify-center items-center gap-5 container-sm">
+      <form
+        className="flex flex-col justify-center items-center gap-5 container-sm"
+        onSubmit={onSubmitClicked}
+      >
         <Input
           id="username"
           label={props?.locale?.register?.username}
@@ -86,7 +96,6 @@ export default function PageClient(props: Props) {
         <button
           type="submit"
           className="bg-primary hover:bg-primary/90 text-white font-semibold rounded-md py-2 px-4 w-full"
-          onSubmit={onSubmitClicked}
         >
           {props?.locale?.register?.title}
         </button>
@@ -99,6 +108,7 @@ export default function PageClient(props: Props) {
           {props?.locale?.register?.login}
         </a>
       </div>
+      <ToastContainer />
     </>
   );
 }

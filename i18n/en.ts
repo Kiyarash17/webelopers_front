@@ -15,11 +15,11 @@ const EN = {
     username: "username",
     password: "password",
     email: "email",
-    first_name: "first name", 
+    first_name: "first name",
     last_name: "last name",
     login: "Have a account? click here",
     loginHref: "/en/auth/login",
-    message: "Account successfuly created!"
+    message: "Account successfuly created!",
   },
   search: "Search",
   header: {
@@ -60,6 +60,10 @@ const EN = {
   },
   question: {
     button: "View",
+  },
+  error: {
+    default: "please check your internet connection",
+    empty: "Please fill all inputs",
   },
 };
 
