@@ -9,6 +9,7 @@ import { useState } from "react";
 type Props = {
   locale: any;
   lang: any;
+  setSearchQuery: any;
 };
 
 export default function QuestionsHeader(props: Props) {
@@ -22,6 +23,7 @@ export default function QuestionsHeader(props: Props) {
             type="text"
             className="bg-gray py-2 rounded-lg px-4 w-full focus:outline-none"
             placeholder={props.locale?.questions?.search}
+            onChange={(e) => props.setSearchQuery(e.target?.value)}
           />
           <HiMagnifyingGlass
             className={`text-2xl ${
