@@ -8,14 +8,18 @@ const FA = {
     password: "رمز عبور",
     signUp: "اینجا ثبت نام کنید",
     registerHref: "/fa/auth/register",
+    loginBtn: "/fa/auth/login",
   },
   register: {
     title: "ثبت نام",
     username: "نام کاربری",
     password: "رمز عبور",
-    repeatPassword: "تکرار رمز عبور",
+    email: "ایمیل",
+    first_name: "نام",
+    last_name: "نام خانوادگی",
     login: "حساب دارید؟ اینجا کلیک کنید",
     loginHref: "/fa/auth/login",
+    message: "حساب کاربری با موفقیت ساخته شد",
   },
   search: "جستجو",
   header: {
@@ -56,6 +60,10 @@ const FA = {
   },
   question: {
     button: "مشاهده",
+  },
+  error: {
+    default: "لطفا اتصال خود را به اینترنت برسی کنید",
+    empty: "لطفا تمامی فیلد ها را پر کنید",
   },
 };
 

@@ -25,7 +25,7 @@ export default function Navbar(props: Props) {
               </li>
             ))}
           </ul>
-          <Button color="gray">
+          <Button color="gray" href={locale?.login?.loginBtn}>
             {locale?.login?.title}
             <FiLogIn className="text-lg" />
           </Button>
