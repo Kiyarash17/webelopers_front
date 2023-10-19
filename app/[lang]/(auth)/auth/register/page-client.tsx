@@ -23,14 +23,14 @@ export default function PageClient(props: Props) {
     e.preventDefault();
     clientApi.auth
       .authRegisterCreate(query, {})
-      .then((resp) => {
+      .then((resp: any) => {
         console.log(resp);
         toast.success(props.locale?.register?.message, {
           position: "bottom-right",
           rtl: true,
         });
       })
-      .catch((err) => {
+      .catch((err: any) => {
         if (!query.username || !query.password) {
           toast.error(props.locale?.error?.empty, {
             position: "bottom-right",
