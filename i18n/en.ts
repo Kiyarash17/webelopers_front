@@ -65,6 +65,8 @@ const EN = {
     default: "please check your internet connection",
     empty: "Please fill all inputs",
   },
+  stats: ["User", "Questions", "Answers"],
+  statstitle: "Join Us!",
 };
 
 export default EN;

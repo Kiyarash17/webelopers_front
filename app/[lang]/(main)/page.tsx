@@ -2,6 +2,7 @@ import Header from "@/components/layouts/header";
 import EN from "@/i18n/en";
 import { Metadata } from "next";
 import { SupportedLocaleType } from "@/i18n";
+import StaticSection from "@/components/statics";
 
 export const metadata: Metadata = {
   title: "بلوبری",
@@ -20,6 +21,11 @@ export default function Home(props: any) {
     <main className="">
       <section>
         <Header lang={props.params?.lang} />
+      </section>
+
+      {/* This is statics */}
+      <section>
+        <StaticSection lang={props.params?.lang} />
       </section>
     </main>
   );
