@@ -3,7 +3,7 @@ import { SupportedLocales } from "./i18n";
 
 // Get the preferred locale, similar to the above or using a library
 function getLocale(request: NextRequest) {
-  return "en";
+  return "fa";
 }
 
 export function middleware(request: NextRequest) {
